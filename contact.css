@@ -1,0 +1,173 @@
+body {
+
+  margin: auto;
+  padding: 25px; /* makes it so the marron in the background shows. Different from the grid */
+  background-color: maroon;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: white;
+
+}
+
+h1 {
+  font-family: 'Sedgwick Ave Display', cursive;
+  color:rgb(233,213,178);
+  text-align: center;
+
+}
+
+.grid-container {
+
+  display: grid; /* This will show what you named your items in grid when testing on web */
+  grid-template-columns: 200px, 250px;
+  grid-auto-rows: minmax(75px, auto);
+  border-style: groove;
+  border-width: 15px;
+  border-color: burlywood;
+  grid-gap: 25px;
+  color: burlywood;
+  background-color: maroon;
+
+  grid-template-areas:
+  "header header header"
+  "reddit twitter github"
+  "reddit twitter github"
+  "reddit twitter github"
+  "cosmos cosmos footer"
+  "cosmos cosmos footer"
+  "cosmos cosmos footer"
+}
+
+
+.grid-item {
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: grid;
+  border: groove rgb(233,213,178) 15px;
+  border-radius: 16px;
+  box-shadow: -1rem 0 3rem #000;
+  padding: 10px;
+  word-wrap: break-word;
+  box-shadow: 16px;
+
+
+}
+
+.grid-item-1 {
+
+  grid-area: header;
+  background-color: maroon;
+  box-shadow: 16px;
+
+
+
+  /*
+  grid-template-columns: 200px, 100px;
+  grid-template-rows: 10px;
+  grid-row-start: -1;
+  grid-row-end: 1;
+  grid-column-start: -1;
+  grid-column-end: 1;
+  color:orange;
+  border-style: dotted;
+  border-width: 10px;
+
+*/
+}
+
+.grid-item-2 {
+
+  grid-area: reddit;
+
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: grid;
+  border: groove burlywood 15px;
+  border-radius: 16px;
+  padding: 10px;
+
+
+
+
+
+  /*display: flex;
+  position: relative;
+  flex-direction: column;
+  height: 50px;
+  width: 420px;
+  min-width: 250px;
+  padding: 1.5rem; */
+
+
+  /* grid-template-columns: 20px, 100px;
+  grid-template-rows: 10px;
+  color:orange;
+  border-style: solid;
+  border-width: 10px;
+  */
+
+}
+
+
+.grid-item-3 {
+
+grid-area: twitter;
+shadow: 16px;
+
+
+/*
+grid-row-start: 2;
+grid-row-end: 4;
+*/
+}
+
+.grid-item-4 {
+
+  grid-area: github;
+
+
+}
+
+.grid-item-5 {
+
+  grid-area: cosmos;
+  background-color: maroon;
+
+
+  /*
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 3fr;
+  background-color: olive;
+  */
+
+
+}
+
+.grid-item-6 {
+
+  grid-area: footer;
+  background-color: maroon;
+
+
+  /*
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 3fr;
+  background-color: olive;
+  */
+
+
+}
+
+a {
+  text-decoration: transparent;
+  color: burlywood;
+  text-align: center;
+
+}

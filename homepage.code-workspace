@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"uri": "vscode-remote://codespaces+sonnymonroe-code50-104036330-x5q4r474q26xj/workspaces/104036330/homepage"
+		}
+	],
+	"remoteAuthority": "codespaces+sonnymonroe-code50-104036330-x5q4r474q26xj",
+	"settings": {
+		"gitdoc.enabled": true
+	}
+}
